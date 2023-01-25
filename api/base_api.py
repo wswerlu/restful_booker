@@ -54,7 +54,7 @@ class ResponseValidator:
 
 class BaseApi:
 
-    def __init__(self, base_url: str = 'https://petstore.swagger.io/v2'):
+    def __init__(self, base_url: str = 'https://restful-booker.herokuapp.com'):
         self.base_url = base_url
         self.session = Session()
         self.session.headers.update(
