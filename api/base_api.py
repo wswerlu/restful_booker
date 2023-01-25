@@ -54,7 +54,7 @@ class ResponseValidator:
 
 class BaseApi:
 
-    def __init__(self, base_url: str = 'https://petstore.swagger.io/v2'):
+    def __init__(self, base_url: str = 'https://restful-booker.herokuapp.com'):
         self.base_url = base_url
         self.session = Session()
         self.session.headers.update(
@@ -90,7 +90,11 @@ class BaseApi:
             params=query,
         )
         self.validator.validate_status_code(response)
-        return response
+
+        try:
+            return response.json()
+        except JSONDecodeError:
+            return response.text
 
     @attach_curl_to_allure()
     @step('Отправка запроса POST на URL-адрес - {url}')
@@ -109,7 +113,7 @@ class BaseApi:
         if headers is None:
             headers = {}
 
-        response = self.session.get(
+        response = self.session.post(
             url=f'{self.base_url}/{url}',
             verify=False,
             data=None if is_json else data,
@@ -118,7 +122,11 @@ class BaseApi:
             params=query,
         )
         self.validator.validate_status_code(response)
-        return response
+
+        try:
+            return response.json()
+        except JSONDecodeError:
+            return response.text
 
     @attach_curl_to_allure()
     @step('Отправка запроса PUT на URL-адрес - {url}')
@@ -137,7 +145,7 @@ class BaseApi:
         if headers is None:
             headers = {}
 
-        response = self.session.get(
+        response = self.session.put(
             url=f'{self.base_url}/{url}',
             verify=False,
             data=None if is_json else data,
@@ -146,7 +154,11 @@ class BaseApi:
             params=query,
         )
         self.validator.validate_status_code(response)
-        return response
+
+        try:
+            return response.json()
+        except JSONDecodeError:
+            return response.text
 
     @attach_curl_to_allure()
     @step('Отправка запроса DELETE на URL-адрес - {url}')
@@ -163,11 +175,15 @@ class BaseApi:
         if headers is None:
             headers = {}
 
-        response = self.session.get(
+        response = self.session.delete(
             url=f'{self.base_url}/{url}',
             verify=False,
             headers=headers,
             params=query,
         )
         self.validator.validate_status_code(response)
-        return response
+
+        try:
+            return response.json()
+        except JSONDecodeError:
+            return response.text
