@@ -15,6 +15,13 @@ class ResponseValidator:
         self.client = client
         self.success_codes = success_codes
 
+    def __enter__(self):
+        self._previous_validator = self.client.validator
+        self.client.validator = self
+
+    def __exit__(self, *args):
+        self.client.validator = self._previous_validator
+
     @staticmethod
     def get_error_reason(response: Response):
         """
