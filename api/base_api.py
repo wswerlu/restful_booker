@@ -11,7 +11,7 @@ class ResponseValidator:
     Класс, проводящий первичную валидацию ответов API.
     """
 
-    def __init__(self, client: 'BaseApi', success_codes: list[int] = None):
+    def __init__(self, client: 'BaseApi', success_codes: list[int] | None = None):
         self.client = client
         self.success_codes = success_codes
 
@@ -65,12 +65,12 @@ class BaseApi:
         )
         self.validator = ResponseValidator(client=self)
 
-    def override_validation_rules(self, success_codes: list[int] = None):
+    def override_validation_rules(self, success_codes: list[int] | None = None):
         return ResponseValidator(self, success_codes)
 
     @attach_curl_to_allure()
     @step('Отправка запроса GET на URL-адрес - {url}')
-    def _get(self, url: str, headers: dict = None, query: dict = None):
+    def _get(self, url: str, headers: dict | None = None, query: dict | None = None):
         """
         Отправка GET-запроса на сервер.
 
@@ -98,7 +98,8 @@ class BaseApi:
 
     @attach_curl_to_allure()
     @step('Отправка запроса POST на URL-адрес - {url}')
-    def _post(self, url: str, data: str | dict = None, headers: dict = None, query: dict = None, is_json: bool = True):
+    def _post(self, url: str, data: str | dict | None = None, headers: dict | None = None, query: dict | None = None,
+              is_json: bool = True):
         """
         Отправка POST-запроса на сервер.
 
@@ -130,7 +131,8 @@ class BaseApi:
 
     @attach_curl_to_allure()
     @step('Отправка запроса PUT на URL-адрес - {url}')
-    def _put(self, url: str, data: str | dict = None, headers: dict = None, query: dict = None, is_json: bool = True):
+    def _put(self, url: str, data: str | dict = None, headers: dict = None, auth: tuple | None = None,
+             query: dict = None, is_json: bool = True):
         """
         Отправка PUT-запроса на сервер.
 
@@ -144,6 +146,8 @@ class BaseApi:
 
         if headers is None:
             headers = {}
+        if auth is None:
+            auth = ()
 
         response = self.session.put(
             url=f'{self.base_url}/{url}',
@@ -151,6 +155,7 @@ class BaseApi:
             data=None if is_json else data,
             json=data if is_json else None,
             headers=headers,
+            auth=auth,
             params=query,
         )
         self.validator.validate_status_code(response)
@@ -162,7 +167,7 @@ class BaseApi:
 
     @attach_curl_to_allure()
     @step('Отправка запроса DELETE на URL-адрес - {url}')
-    def _delete(self, url: str, headers: dict = None, query: dict = None):
+    def _delete(self, url: str, headers: dict | None = None, auth: tuple | None = None, query: dict | None = None):
         """
         Отправка DELETE-запроса на сервер.
 
@@ -174,11 +179,14 @@ class BaseApi:
 
         if headers is None:
             headers = {}
+        if auth is None:
+            auth = ()
 
         response = self.session.delete(
             url=f'{self.base_url}/{url}',
             verify=False,
             headers=headers,
+            auth=auth,
             params=query,
         )
         self.validator.validate_status_code(response)
