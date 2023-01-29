@@ -201,3 +201,34 @@ class BookingApi(BaseApi):
             data['additionalneeds'] = additional_needs
 
         return self._patch(url=f'booking/{booking_id}', data=data, auth=auth)
+
+    @step('Удалить бронирование с id {booking_id}')
+    def delete_booking(self, booking_id: int) -> dict:
+        """
+        Удаление указанного бронирования.
+
+        :param booking_id: id бронирования.
+        :return: результат выполнения запроса.
+        """
+
+        auth = (USERS['admin']['login'], USERS['admin']['password'])
+
+        return self._delete(url=f'booking/{booking_id}', auth=auth)
+
+    @step('Проверить, что не существует бронирование с id: {booking_id}')
+    def should_not_be_booking_with_id(self, booking_id: int, firstname: str | None = None, lastname: str | None = None,
+                                      checkin: str | None = None, checkout: str | None = None) -> None:
+        """
+        Проверка того, что не существует бронирование с указанным id.
+
+        :param booking_id: id бронирования.
+        :param firstname: имя.
+        :param lastname: фамилия.
+        :param checkin: дата заезда.
+        :param checkout: дата отъезда.
+        """
+
+        response = self.get_bookings_ids(firstname=firstname, lastname=lastname, checkin=checkin, checkout=checkout)
+        bookings_ids = [x['bookingid'] for x in response]
+
+        assert booking_id not in bookings_ids, f'Есть бронирование с id: {booking_id}'

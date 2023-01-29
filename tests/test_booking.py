@@ -91,3 +91,15 @@ class TestBooking:
             booking_id=booking_id,
             expected_booking_info=booking_data,
         )
+
+    @title('Успешное удаление бронирования')
+    def test_delete_booking_success(self, booking_api, create_booking):
+        booking_id = create_booking['bookingid']
+
+        booking_api.delete_booking(booking_id=booking_id)
+
+        booking_api.should_not_be_booking_with_id(
+            booking_id=booking_id,
+            firstname=create_booking['booking']['firstname'],
+            lastname=create_booking['booking']['lastname'],
+        )
