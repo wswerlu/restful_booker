@@ -22,3 +22,12 @@ def create_booking(booking_api):
     """
 
     return booking_api.create_booking()
+
+
+@fixture(scope='function')
+def create_token(auth_api):
+    """
+    Создание токена.
+    """
+
+    return auth_api.create_token()

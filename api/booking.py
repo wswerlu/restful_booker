@@ -97,7 +97,7 @@ class BookingApi(BaseApi):
 
     @step('Обновить бронирование с id {booking_id}')
     def update_booking(self, booking_id: int, firstname: str, lastname: str, total_price: int, deposit_paid: bool,
-                       checkin: str, checkout: str, additional_needs: str) -> dict:
+                       checkin: str, checkout: str, additional_needs: str, token: str | None = None) -> dict:
         """
         Обновление указанного бронирования.
 
@@ -109,10 +109,17 @@ class BookingApi(BaseApi):
         :param checkin: дата заезда.
         :param checkout: дата отъезда.
         :param additional_needs: дополнительные пожелания по бронированию.
+        :param token: токен аутентификации.
         :return: результат выполнения запроса.
         """
 
-        auth = (USERS['admin']['login'], USERS['admin']['password'])
+        auth = None
+        cookies = None
+
+        if token:
+            cookies = {'token': token}
+        else:
+            auth = (USERS['admin']['login'], USERS['admin']['password'])
 
         data = {
             'firstname': firstname,
@@ -126,7 +133,7 @@ class BookingApi(BaseApi):
             'additionalneeds': additional_needs,
         }
 
-        return self._put(url=f'booking/{booking_id}', data=data, auth=auth)
+        return self._put(url=f'booking/{booking_id}', data=data, auth=auth, cookies=cookies)
 
     @step('Получить информацию по бронированию с id: {booking_id}')
     def get_booking_info(self, booking_id: int) -> dict:
