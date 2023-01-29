@@ -160,3 +160,44 @@ class BookingApi(BaseApi):
 
             assert actual_data == expected_data, \
                 f'Текущее значение ключа {key!r}: {actual_data} не соответствует ожидаемому: {expected_data}'
+
+    @step('Частично обновить бронирование с id {booking_id}')
+    def partial_update_booking(self, booking_id: int, firstname: str | None = None, lastname: str | None = None,
+                               total_price: int | None = None, deposit_paid: bool | None = None,
+                               checkin: str | None = None, checkout: str | None = None,
+                               additional_needs: str | None = None) -> dict:
+        """
+        Частичное обновление указанного бронирования.
+
+        :param booking_id: id бронирования.
+        :param firstname: имя.
+        :param lastname: фамилия.
+        :param total_price: стоимость бронирования.
+        :param deposit_paid: True — депозит внесен, False — депозит не внесен.
+        :param checkin: дата заезда.
+        :param checkout: дата отъезда.
+        :param additional_needs: дополнительные пожелания по бронированию.
+        :return: результат выполнения запроса.
+        """
+
+        auth = (USERS['admin']['login'], USERS['admin']['password'])
+
+        data = {}
+
+        if firstname:
+            data['firstname'] = firstname
+        if lastname:
+            data['lastname'] = lastname
+        if total_price:
+            data['totalprice'] = total_price
+        if deposit_paid:
+            data['depositpaid'] = deposit_paid
+        if checkin or checkout:
+            data['bookingdates'] = {
+                'checkin': str(checkin),
+                'checkout': str(checkout),
+            }
+        if additional_needs:
+            data['additionalneeds'] = additional_needs
+
+        return self._patch(url=f'booking/{booking_id}', data=data, auth=auth)
