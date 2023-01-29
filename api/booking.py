@@ -33,9 +33,8 @@ class BookingApi(BaseApi):
         """
 
         if is_random:
-            user = UserData()
-            firstname = user.firstname()
-            lastname = user.lastname()
+            firstname = UserData().firstname()
+            lastname = UserData().lastname()
             total_price = randint(1, 100000)
             deposit_paid = choice([True, False])
             checkin = date.today() + timedelta(days=randint(0, 366))
