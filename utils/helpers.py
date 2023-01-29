@@ -1,14 +1,18 @@
+from datetime import date, datetime, timedelta
 from glob import glob
 from json import load
 from os.path import join
 from pathlib import Path
 from platform import system
+from random import choice, randint
 
 from allure import step
 from jsonschema.exceptions import ValidationError
 from jsonschema.validators import validate
 from mimesis.exceptions import SchemaError
 from requests import Response
+
+from utils.generated_test_data import UserData
 
 
 def get_fixtures():
@@ -46,3 +50,24 @@ def json_schema_asserts(response: Response, name: str):
     :param name: Имя схемы JSON
     """
     assert validate_json(response, name), f'Ошибка при валидации схемы - {name}'
+
+
+def get_booking_data():
+    checkin = date.today() + timedelta(days=randint(0, 366))
+    checkout = checkin + timedelta(days=randint(0, 366))
+
+    return {
+        'firstname': UserData().firstname(),
+        'lastname': UserData().lastname(),
+        'totalprice': randint(1, 100000),
+        'depositpaid': choice([True, False]),
+        'checkin': str(checkin),
+        'checkout': str(checkout),
+        'additionalneeds': choice(['Breakfast', 'Lunch', 'Dinner']),
+    }
+
+
+def get_updated_date(old_date: str, delta: int = 1):
+    new_date = datetime.strptime(old_date, '%Y-%m-%d') + timedelta(days=delta)
+
+    return datetime.strftime(new_date, '%Y-%m-%d')
