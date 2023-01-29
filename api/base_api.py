@@ -131,8 +131,8 @@ class BaseApi:
 
     @attach_curl_to_allure()
     @step('Отправка запроса PUT на URL-адрес - {url}')
-    def _put(self, url: str, data: str | dict = None, headers: dict = None, auth: tuple | None = None,
-             query: dict = None, is_json: bool = True):
+    def _put(self, url: str, data: str | dict | None = None, headers: dict | None = None, auth: tuple | None = None,
+             query: dict | None = None, cookies: dict | None = None, is_json: bool = True):
         """
         Отправка PUT-запроса на сервер.
 
@@ -140,6 +140,7 @@ class BaseApi:
         :param query: query-параметры запроса.
         :param headers: заголовки запроса.
         :param data: тело запроса.
+        :param cookies: куки.
         :param is_json: параметр, управляющий заголовком типа содержимого.
         :return: ответ.
         """
@@ -148,6 +149,8 @@ class BaseApi:
             headers = {}
         if auth is None:
             auth = ()
+        if cookies is None:
+            cookies = {}
 
         response = self.session.put(
             url=f'{self.base_url}/{url}',
@@ -157,6 +160,7 @@ class BaseApi:
             headers=headers,
             auth=auth,
             params=query,
+            cookies=cookies,
         )
         self.validator.validate_status_code(response)
 
@@ -167,8 +171,8 @@ class BaseApi:
 
     @attach_curl_to_allure()
     @step('Отправка запроса PATCH на URL-адрес - {url}')
-    def _patch(self, url: str, data: str | dict = None, headers: dict = None, auth: tuple | None = None,
-               query: dict = None, is_json: bool = True):
+    def _patch(self, url: str, data: str | dict | None = None, headers: dict | None = None, auth: tuple | None = None,
+               query: dict | None = None, cookies: dict | None = None, is_json: bool = True):
         """
         Отправка PUT-запроса на сервер.
 
@@ -184,6 +188,8 @@ class BaseApi:
             headers = {}
         if auth is None:
             auth = ()
+        if cookies is None:
+            cookies = {}
 
         response = self.session.patch(
             url=f'{self.base_url}/{url}',
@@ -193,6 +199,7 @@ class BaseApi:
             headers=headers,
             auth=auth,
             params=query,
+            cookies=cookies,
         )
         self.validator.validate_status_code(response)
 
@@ -203,7 +210,8 @@ class BaseApi:
 
     @attach_curl_to_allure()
     @step('Отправка запроса DELETE на URL-адрес - {url}')
-    def _delete(self, url: str, headers: dict | None = None, auth: tuple | None = None, query: dict | None = None):
+    def _delete(self, url: str, headers: dict | None = None, auth: tuple | None = None, query: dict | None = None,
+                cookies: dict | None = None):
         """
         Отправка DELETE-запроса на сервер.
 
@@ -217,6 +225,8 @@ class BaseApi:
             headers = {}
         if auth is None:
             auth = ()
+        if cookies is None:
+            cookies = {}
 
         response = self.session.delete(
             url=f'{self.base_url}/{url}',
@@ -224,6 +234,7 @@ class BaseApi:
             headers=headers,
             auth=auth,
             params=query,
+            cookies=cookies,
         )
         self.validator.validate_status_code(response)
 
