@@ -40,3 +40,10 @@ class TestBooking:
             firstname=booking_data['firstname'],
             token=create_token['token'],
         )
+
+    @title('Удаление бронирования с невалидным токеном')
+    def test_delete_booking_with_invalid_auth_token(self, booking_api, create_booking):
+        booking_id = create_booking['bookingid']
+
+        with booking_api.override_validation_rules(success_codes=[403]):
+            booking_api.delete_booking(booking_id=booking_id, token='invalid_token')
