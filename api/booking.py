@@ -172,7 +172,7 @@ class BookingApi(BaseApi):
     def partial_update_booking(self, booking_id: int, firstname: str | None = None, lastname: str | None = None,
                                total_price: int | None = None, deposit_paid: bool | None = None,
                                checkin: str | None = None, checkout: str | None = None,
-                               additional_needs: str | None = None) -> dict:
+                               additional_needs: str | None = None, token: str | None = None) -> dict:
         """
         Частичное обновление указанного бронирования.
 
@@ -184,10 +184,17 @@ class BookingApi(BaseApi):
         :param checkin: дата заезда.
         :param checkout: дата отъезда.
         :param additional_needs: дополнительные пожелания по бронированию.
+        :param token: токен аутентификации.
         :return: результат выполнения запроса.
         """
 
-        auth = (USERS['admin']['login'], USERS['admin']['password'])
+        auth = None
+        cookies = None
+
+        if token:
+            cookies = {'token': token}
+        else:
+            auth = (USERS['admin']['login'], USERS['admin']['password'])
 
         data = {}
 
@@ -207,7 +214,7 @@ class BookingApi(BaseApi):
         if additional_needs:
             data['additionalneeds'] = additional_needs
 
-        return self._patch(url=f'booking/{booking_id}', data=data, auth=auth)
+        return self._patch(url=f'booking/{booking_id}', data=data, auth=auth, cookies=cookies)
 
     @step('Удалить бронирование с id {booking_id}')
     def delete_booking(self, booking_id: int) -> dict:
