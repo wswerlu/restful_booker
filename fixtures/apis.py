@@ -10,3 +10,10 @@ def booking_api():
 
 
 # ------------------------------------- Фикстуры для подготовки тестовых данных -------------------------------------- #
+@fixture(scope='function')
+def create_booking(booking_api):
+    """
+    Создание бронирования.
+    """
+
+    return booking_api.create_booking()
