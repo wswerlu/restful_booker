@@ -1,4 +1,4 @@
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 from glob import glob
 from json import load
 from os.path import join
@@ -55,6 +55,7 @@ def json_schema_asserts(response: Response, name: str):
 def get_booking_data():
     checkin = date.today() + timedelta(days=randint(0, 366))
     checkout = checkin + timedelta(days=randint(0, 366))
+
     return {
         'firstname': UserData().firstname(),
         'lastname': UserData().lastname(),
@@ -64,3 +65,9 @@ def get_booking_data():
         'checkout': str(checkout),
         'additionalneeds': choice(['Breakfast', 'Lunch', 'Dinner']),
     }
+
+
+def get_updated_date(old_date: str, delta: int = 1):
+    new_date = datetime.strptime(old_date, '%Y-%m-%d') + timedelta(days=delta)
+
+    return datetime.strftime(new_date, '%Y-%m-%d')
