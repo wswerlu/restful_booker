@@ -1,10 +1,6 @@
-from datetime import date, timedelta
-from random import choice, randint
-
 from allure import epic, feature, title
 
-from utils.generated_test_data import UserData
-from utils.helpers import json_schema_asserts
+from utils.helpers import get_booking_data, json_schema_asserts
 
 
 @epic('Api')
@@ -29,32 +25,22 @@ class TestBooking:
 
     @title('Успешное обновление бронирования')
     def test_update_booking_success(self, booking_api, create_booking):
-        checkin = date.today() + timedelta(days=randint(0, 366))
-        checkout = checkin + timedelta(days=randint(0, 366))
-        booking = {
-            'firstname': UserData().firstname(),
-            'lastname': UserData().lastname(),
-            'totalprice': randint(1, 100000),
-            'depositpaid': choice([True, False]),
-            'checkin': str(checkin),
-            'checkout': str(checkout),
-            'additionalneeds': choice(['Breakfast', 'Lunch', 'Dinner']),
-        }
+        booking_data = get_booking_data()
 
         booking_id = create_booking['bookingid']
         update_booking = booking_api.update_booking(
             booking_id=booking_id,
-            firstname=booking['firstname'],
-            lastname=booking['lastname'],
-            total_price=booking['totalprice'],
-            deposit_paid=booking['depositpaid'],
-            checkin=booking['checkin'],
-            checkout=booking['checkout'],
-            additional_needs=booking['additionalneeds'],
+            firstname=booking_data['firstname'],
+            lastname=booking_data['lastname'],
+            total_price=booking_data['totalprice'],
+            deposit_paid=booking_data['depositpaid'],
+            checkin=booking_data['checkin'],
+            checkout=booking_data['checkout'],
+            additional_needs=booking_data['additionalneeds'],
         )
 
         json_schema_asserts(response=update_booking, name='update_booking')
         booking_api.should_be_updated_booking(
             booking_id=booking_id,
-            expected_booking_info=booking,
+            expected_booking_info=booking_data,
         )
