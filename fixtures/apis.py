@@ -1,6 +1,6 @@
 from pytest import fixture
 
-from api import BookingApi
+from api import AuthApi, BookingApi
 
 
 # ---------------------------------------------- Инициализация хелперов ---------------------------------------------- #
@@ -9,4 +9,16 @@ def booking_api():
     return BookingApi()
 
 
+@fixture(scope='function')
+def auth_api():
+    return AuthApi()
+
+
 # ------------------------------------- Фикстуры для подготовки тестовых данных -------------------------------------- #
+@fixture(scope='function')
+def create_booking(booking_api):
+    """
+    Создание бронирования.
+    """
+
+    return booking_api.create_booking()
