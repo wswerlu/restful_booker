@@ -53,3 +53,41 @@ class TestBooking:
             booking_id=booking_id,
             expected_booking_info=booking_data,
         )
+
+    @title('Успешное частичное обновление бронирования')
+    def test_partial_update_booking_success(self, booking_api, create_booking, data_booking_partialupdate):
+        booking_id = create_booking['bookingid']
+        booking_data = {
+            'firstname': create_booking['booking']['firstname'] + 'test'
+            if data_booking_partialupdate[0] else create_booking['booking']['firstname'],
+            'lastname': create_booking['booking']['lastname'] + 'test'
+            if data_booking_partialupdate[1] else create_booking['booking']['lastname'],
+            'totalprice': create_booking['booking']['totalprice'] + randint(1, 100)
+            if data_booking_partialupdate[2] else create_booking['booking']['totalprice'],
+            'depositpaid': not create_booking['booking']['depositpaid']
+            if data_booking_partialupdate[3] else create_booking['booking']['depositpaid'],
+            'checkin': get_updated_date(old_date=create_booking['booking']['bookingdates']['checkin'])
+            if data_booking_partialupdate[4] else create_booking['booking']['bookingdates']['checkin'],
+            'checkout': get_updated_date(old_date=create_booking['booking']['bookingdates']['checkout'])
+            if data_booking_partialupdate[5] else create_booking['booking']['bookingdates']['checkout'],
+            'additionalneeds': create_booking['booking']['additionalneeds'] + 'test'
+            if data_booking_partialupdate[6] else create_booking['booking']['additionalneeds'],
+        }
+
+        partial_update_booking = booking_api.partial_update_booking(
+            booking_id=booking_id,
+            firstname=booking_data['firstname'] if data_booking_partialupdate[0] else None,
+            lastname=booking_data['lastname'] if data_booking_partialupdate[1] else None,
+            total_price=booking_data['totalprice'] if data_booking_partialupdate[2] else None,
+            deposit_paid=booking_data['depositpaid'] if data_booking_partialupdate[3] else None,
+            checkin=booking_data['checkin'] if data_booking_partialupdate[4] or data_booking_partialupdate[5] else None,
+            checkout=booking_data['checkout']
+            if data_booking_partialupdate[4] or data_booking_partialupdate[5] else None,
+            additional_needs=booking_data['additionalneeds'] if data_booking_partialupdate[6] else None,
+        )
+        json_schema_asserts(response=partial_update_booking, name='update_booking')
+
+        booking_api.should_be_updated_booking(
+            booking_id=booking_id,
+            expected_booking_info=booking_data,
+        )
