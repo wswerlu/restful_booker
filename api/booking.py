@@ -217,17 +217,24 @@ class BookingApi(BaseApi):
         return self._patch(url=f'booking/{booking_id}', data=data, auth=auth, cookies=cookies)
 
     @step('Удалить бронирование с id {booking_id}')
-    def delete_booking(self, booking_id: int) -> dict:
+    def delete_booking(self, booking_id: int, token: str | None = None) -> dict:
         """
         Удаление указанного бронирования.
 
         :param booking_id: id бронирования.
+        :param token: токен аутентификации.
         :return: результат выполнения запроса.
         """
 
-        auth = (USERS['admin']['login'], USERS['admin']['password'])
+        auth = None
+        cookies = None
 
-        return self._delete(url=f'booking/{booking_id}', auth=auth)
+        if token:
+            cookies = {'token': token}
+        else:
+            auth = (USERS['admin']['login'], USERS['admin']['password'])
+
+        return self._delete(url=f'booking/{booking_id}', auth=auth, cookies=cookies)
 
     @step('Проверить, что не существует бронирование с id: {booking_id}')
     def should_not_be_booking_with_id(self, booking_id: int, firstname: str | None = None, lastname: str | None = None,
