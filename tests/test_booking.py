@@ -1,6 +1,8 @@
+from random import randint
+
 from allure import epic, feature, title
 
-from utils.helpers import get_booking_data, json_schema_asserts
+from utils.helpers import get_updated_date, json_schema_asserts
 
 
 @epic('Api')
@@ -13,7 +15,6 @@ class TestBooking:
     @title('Успешное создание бронирования')
     def test_create_booking_success(self, booking_api):
         booking = booking_api.create_booking()
-
         json_schema_asserts(response=booking, name='create_booking')
 
         booking_id = booking['bookingid']
@@ -25,9 +26,17 @@ class TestBooking:
 
     @title('Успешное обновление бронирования')
     def test_update_booking_success(self, booking_api, create_booking):
-        booking_data = get_booking_data()
-
         booking_id = create_booking['bookingid']
+        booking_data = {
+            'firstname': create_booking['booking']['firstname'] + 'test',
+            'lastname': create_booking['booking']['lastname'] + 'test',
+            'totalprice': create_booking['booking']['totalprice'] + randint(1, 100),
+            'depositpaid': not create_booking['booking']['depositpaid'],
+            'checkin': get_updated_date(old_date=create_booking['booking']['bookingdates']['checkin']),
+            'checkout': get_updated_date(old_date=create_booking['booking']['bookingdates']['checkout']),
+            'additionalneeds': create_booking['booking']['additionalneeds'] + 'test',
+        }
+
         update_booking = booking_api.update_booking(
             booking_id=booking_id,
             firstname=booking_data['firstname'],
@@ -38,8 +47,8 @@ class TestBooking:
             checkout=booking_data['checkout'],
             additional_needs=booking_data['additionalneeds'],
         )
-
         json_schema_asserts(response=update_booking, name='update_booking')
+
         booking_api.should_be_updated_booking(
             booking_id=booking_id,
             expected_booking_info=booking_data,
