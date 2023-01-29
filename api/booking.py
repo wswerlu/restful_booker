@@ -9,25 +9,25 @@ from utils.generated_test_data import UserData
 
 class BookingApi(BaseApi):
     """
-    Методы для работы с бронью.
+    Методы для работы с бронированием.
     """
 
-    @step('Создать бронь')
+    @step('Создать бронирование')
     def create_booking(self, firstname: str | None = None, lastname: str | None = None, total_price: int | None = None,
                        deposit_paid: bool | None = None, checkin: str | None = None, checkout: str | None = None,
                        additional_needs: str = 'Breakfast', is_random: bool = True) -> dict:
         """
-        Создание брони.
+        Создание бронирования.
 
         :param firstname: имя.
         :param lastname: фамилия.
-        :param total_price: стоимость брони.
+        :param total_price: стоимость бронирования.
         :param deposit_paid: True — депозит внесен, False — депозит не внесен.
         :param checkin: дата заезда.
         :param checkout: дата отъезда.
-        :param additional_needs: дополнительные пожелания по брони.
-        :param is_random: True — бронь с произвольными данными (остальные параметры указывать не надо),
-         False — бронь с конкретными данными.
+        :param additional_needs: дополнительные пожелания по бронированию.
+        :param is_random: True — бронирование с произвольными данными (остальные параметры указывать не надо),
+         False — бронирование с конкретными данными.
         :return: результат выполнения запроса.
         """
 
@@ -58,7 +58,7 @@ class BookingApi(BaseApi):
     def get_bookings_ids(self, firstname: str | None = None, lastname: str | None = None, checkin: str | None = None,
                          checkout: str | None = None) -> list:
         """
-        Получение списка с id броней.
+        Получение списка с id бронирований.
 
         :param firstname: имя.
         :param lastname: фамилия.
