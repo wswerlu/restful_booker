@@ -166,6 +166,42 @@ class BaseApi:
             return response.text
 
     @attach_curl_to_allure()
+    @step('Отправка запроса PATCH на URL-адрес - {url}')
+    def _patch(self, url: str, data: str | dict = None, headers: dict = None, auth: tuple | None = None,
+               query: dict = None, is_json: bool = True):
+        """
+        Отправка PUT-запроса на сервер.
+
+        :param url: url-адрес запроса.
+        :param query: query-параметры запроса.
+        :param headers: заголовки запроса.
+        :param data: тело запроса.
+        :param is_json: параметр, управляющий заголовком типа содержимого.
+        :return: ответ.
+        """
+
+        if headers is None:
+            headers = {}
+        if auth is None:
+            auth = ()
+
+        response = self.session.patch(
+            url=f'{self.base_url}/{url}',
+            verify=False,
+            data=None if is_json else data,
+            json=data if is_json else None,
+            headers=headers,
+            auth=auth,
+            params=query,
+        )
+        self.validator.validate_status_code(response)
+
+        try:
+            return response.json()
+        except JSONDecodeError:
+            return response.text
+
+    @attach_curl_to_allure()
     @step('Отправка запроса DELETE на URL-адрес - {url}')
     def _delete(self, url: str, headers: dict | None = None, auth: tuple | None = None, query: dict | None = None):
         """
