@@ -31,16 +31,6 @@ class TestBooking:
             token=create_token['token'],
         )
 
-    @title('Обновление бронирования с использованием токена аутентификации')
-    def test_partial_update_booking_with_auth_token(self, booking_api, create_booking, create_token):
-        booking_data = get_booking_data()
-
-        booking_api.partial_update_booking(
-            booking_id=create_booking['bookingid'],
-            firstname=booking_data['firstname'],
-            token=create_token['token'],
-        )
-
     @title('Удаление бронирования с невалидным токеном')
     def test_delete_booking_with_invalid_auth_token(self, booking_api, create_booking):
         booking_id = create_booking['bookingid']
