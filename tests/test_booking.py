@@ -103,3 +103,10 @@ class TestBooking:
             firstname=create_booking['booking']['firstname'],
             lastname=create_booking['booking']['lastname'],
         )
+
+    @title('Успешное получение информации по бронированию')
+    def test_get_booking_success(self, booking_api, create_booking):
+        booking_id = create_booking['bookingid']
+
+        booking = booking_api.get_booking_info(booking_id=booking_id)
+        json_schema_asserts(response=booking, name='get_booking')
