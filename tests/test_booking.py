@@ -110,3 +110,13 @@ class TestBooking:
 
         booking = booking_api.get_booking_info(booking_id=booking_id)
         json_schema_asserts(response=booking, name='get_booking')
+
+    @title('Успешное получение id бронирований')
+    def test_get_booking_ids_success(self, booking_api, create_booking, data_booking_bookingids):
+        booking_id = booking_api.get_bookings_ids(
+            firstname=create_booking['booking']['firstname'] if data_booking_bookingids[0] else None,
+            lastname=create_booking['booking']['lastname'] if data_booking_bookingids[1] else None,
+            checkin=create_booking['booking']['bookingdates']['checkin'] if data_booking_bookingids[2] else None,
+            checkout=create_booking['booking']['bookingdates']['checkout'] if data_booking_bookingids[3] else None,
+        )
+        json_schema_asserts(response=booking_id, name='get_booking_ids')
