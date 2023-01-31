@@ -97,7 +97,8 @@ class BookingApi(BaseApi):
 
     @step('Обновить бронирование с id {booking_id}')
     def update_booking(self, booking_id: int, firstname: str, lastname: str, total_price: int, deposit_paid: bool,
-                       checkin: str, checkout: str, additional_needs: str, token: str | None = None) -> dict:
+                       checkin: str, checkout: str, additional_needs: str, token: str | None = None,
+                       bauth_login: str | None = None, bauth_pass: str | None = None) -> dict:
         """
         Обновление указанного бронирования.
 
@@ -110,6 +111,8 @@ class BookingApi(BaseApi):
         :param checkout: дата отъезда.
         :param additional_needs: дополнительные пожелания по бронированию.
         :param token: токен аутентификации.
+        :param bauth_login: логин базовой аутентификации.
+        :param bauth_pass: пароль базовой аутентификации.
         :return: результат выполнения запроса.
         """
 
@@ -119,7 +122,10 @@ class BookingApi(BaseApi):
         if token:
             cookies = {'token': token}
         else:
-            auth = (USERS['admin']['login'], USERS['admin']['password'])
+            auth = (
+                bauth_login if bauth_login else USERS['admin']['login'],
+                bauth_pass if bauth_pass else USERS['admin']['password'],
+            )
 
         data = {
             'firstname': firstname,
@@ -172,7 +178,8 @@ class BookingApi(BaseApi):
     def partial_update_booking(self, booking_id: int, firstname: str | None = None, lastname: str | None = None,
                                total_price: int | None = None, deposit_paid: bool | None = None,
                                checkin: str | None = None, checkout: str | None = None,
-                               additional_needs: str | None = None, token: str | None = None) -> dict:
+                               additional_needs: str | None = None, token: str | None = None,
+                               bauth_login: str | None = None, bauth_pass: str | None = None) -> dict:
         """
         Частичное обновление указанного бронирования.
 
@@ -185,6 +192,8 @@ class BookingApi(BaseApi):
         :param checkout: дата отъезда.
         :param additional_needs: дополнительные пожелания по бронированию.
         :param token: токен аутентификации.
+        :param bauth_login: логин базовой аутентификации.
+        :param bauth_pass: пароль базовой аутентификации.
         :return: результат выполнения запроса.
         """
 
@@ -194,7 +203,10 @@ class BookingApi(BaseApi):
         if token:
             cookies = {'token': token}
         else:
-            auth = (USERS['admin']['login'], USERS['admin']['password'])
+            auth = (
+                bauth_login if bauth_login else USERS['admin']['login'],
+                bauth_pass if bauth_pass else USERS['admin']['password'],
+            )
 
         data = {}
 
@@ -217,12 +229,15 @@ class BookingApi(BaseApi):
         return self._patch(url=f'booking/{booking_id}', data=data, auth=auth, cookies=cookies)
 
     @step('Удалить бронирование с id {booking_id}')
-    def delete_booking(self, booking_id: int, token: str | None = None) -> dict:
+    def delete_booking(self, booking_id: int, token: str | None = None, bauth_login: str | None = None,
+                       bauth_pass: str | None = None) -> dict:
         """
         Удаление указанного бронирования.
 
         :param booking_id: id бронирования.
         :param token: токен аутентификации.
+        :param bauth_login: логин базовой аутентификации.
+        :param bauth_pass: пароль базовой аутентификации.
         :return: результат выполнения запроса.
         """
 
@@ -232,7 +247,10 @@ class BookingApi(BaseApi):
         if token:
             cookies = {'token': token}
         else:
-            auth = (USERS['admin']['login'], USERS['admin']['password'])
+            auth = (
+                bauth_login if bauth_login else USERS['admin']['login'],
+                bauth_pass if bauth_pass else USERS['admin']['password'],
+            )
 
         return self._delete(url=f'booking/{booking_id}', auth=auth, cookies=cookies)
 
