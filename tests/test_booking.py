@@ -120,3 +120,10 @@ class TestBooking:
             checkout=create_booking['booking']['bookingdates']['checkout'] if data_booking_bookingids[3] else None,
         )
         json_schema_asserts(response=booking_id, name='get_booking_ids')
+
+    @title('Получение информации по бронированию с несуществующим id')
+    def test_get_booking_with_non_existent_booking_id(self, booking_api):
+        non_existent_booking_id = booking_api.get_max_booking_id() + 1000
+
+        with booking_api.override_validation_rules(success_codes=[404]):
+            booking_api.get_booking_info(booking_id=non_existent_booking_id)
