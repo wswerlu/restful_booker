@@ -271,3 +271,15 @@ class BookingApi(BaseApi):
         bookings_ids = [x['bookingid'] for x in response]
 
         assert booking_id not in bookings_ids, f'Есть бронирование с id: {booking_id}'
+
+    @step('Получить максимальное id бронирования')
+    def get_max_booking_id(self) -> int:
+        """
+        Получение максимального id бронирования.
+
+        :return: максимальное id бронирования.
+        """
+
+        booking_ids = self.get_bookings_ids()
+
+        return max([x['bookingid'] for x in booking_ids])
