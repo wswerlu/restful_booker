@@ -127,3 +127,16 @@ class TestBooking:
 
         with booking_api.override_validation_rules(success_codes=[404]):
             booking_api.get_booking_info(booking_id=non_existent_booking_id)
+
+    @title('Создание бронирования без обязательных параметров')
+    def test_create_booking_without_required_parameters(self, booking_api, data_booking_requiredparameters):
+        with booking_api.override_validation_rules(success_codes=[500]):
+            booking_api.create_booking(
+                firstname=data_booking_requiredparameters[0] if data_booking_requiredparameters[0] else None,
+                lastname=data_booking_requiredparameters[1] if data_booking_requiredparameters[1] else None,
+                total_price=data_booking_requiredparameters[2] if data_booking_requiredparameters[2] else None,
+                deposit_paid=data_booking_requiredparameters[3] if data_booking_requiredparameters[3] else None,
+                checkin=data_booking_requiredparameters[4] if data_booking_requiredparameters[4] else None,
+                checkout=data_booking_requiredparameters[5] if data_booking_requiredparameters[5] else None,
+                is_random=False,
+            )
