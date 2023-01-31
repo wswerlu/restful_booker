@@ -47,8 +47,8 @@ class BookingApi(BaseApi):
             'totalprice': total_price,
             'depositpaid': deposit_paid,
             'bookingdates': {
-                'checkin': str(checkin),
-                'checkout': str(checkout),
+                'checkin': str(checkin) if checkin else None,
+                'checkout': str(checkout) if checkout else None,
             },
             'additionalneeds': additional_needs,
         }
