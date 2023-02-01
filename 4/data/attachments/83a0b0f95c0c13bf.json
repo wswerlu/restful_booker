@@ -1,0 +1,14 @@
+{
+    "bookingid": 3366,
+    "booking": {
+        "firstname": "Климент",
+        "lastname": "Рекемчук",
+        "totalprice": 46311,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2023-07-06",
+            "checkout": "2023-11-19"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

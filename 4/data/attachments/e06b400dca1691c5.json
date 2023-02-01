@@ -1,0 +1,14 @@
+{
+    "bookingid": 3364,
+    "booking": {
+        "firstname": "Лука",
+        "lastname": "Соловьев",
+        "totalprice": 9324,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2023-11-16",
+            "checkout": "2024-06-17"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

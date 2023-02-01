@@ -1,0 +1,1 @@
+curl -X GET -H 'Accept: */*' -H 'Accept-Encoding: gzip, deflate' -H 'Connection: keep-alive' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36' 'https://restful-booker.herokuapp.com/booking?lastname=%D0%A1%D0%BE%D0%BB%D0%BE%D0%B2%D1%8C%D0%B5%D0%B2'

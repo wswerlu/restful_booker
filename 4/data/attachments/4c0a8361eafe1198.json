@@ -1,0 +1,11 @@
+{
+    "firstname": "Альбертtest",
+    "lastname": "Коржавина",
+    "totalprice": 97271,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2023-08-15",
+        "checkout": "2024-04-22"
+    },
+    "additionalneeds": "Dinner"
+}

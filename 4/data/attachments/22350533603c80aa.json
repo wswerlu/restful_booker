@@ -1,0 +1,14 @@
+{
+    "bookingid": 3696,
+    "booking": {
+        "firstname": "Лукьян",
+        "lastname": "Туркул",
+        "totalprice": 22128,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2023-06-19",
+            "checkout": "2024-02-06"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

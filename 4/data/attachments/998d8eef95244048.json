@@ -1,0 +1,14 @@
+{
+    "bookingid": 3350,
+    "booking": {
+        "firstname": "Еремей",
+        "lastname": "Александрова",
+        "totalprice": 84888,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-04-13",
+            "checkout": "2023-06-27"
+        },
+        "additionalneeds": "Dinner"
+    }
+}

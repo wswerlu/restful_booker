@@ -1,0 +1,14 @@
+{
+    "bookingid": 3365,
+    "booking": {
+        "firstname": "Аркадий",
+        "lastname": "Жуликова",
+        "totalprice": 14927,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2023-02-06",
+            "checkout": "2023-05-13"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

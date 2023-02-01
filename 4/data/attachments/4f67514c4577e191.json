@@ -1,0 +1,14 @@
+{
+    "bookingid": 3362,
+    "booking": {
+        "firstname": "Юрий",
+        "lastname": "Ельшина",
+        "totalprice": 68275,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-02-08",
+            "checkout": "2023-07-21"
+        },
+        "additionalneeds": "Dinner"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "bookingid": 3346,
+    "booking": {
+        "firstname": "Диля",
+        "lastname": "Меркушева",
+        "totalprice": 22971,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-08-13",
+            "checkout": "2024-03-23"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

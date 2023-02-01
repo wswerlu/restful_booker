@@ -1,0 +1,14 @@
+{
+    "bookingid": 3654,
+    "booking": {
+        "firstname": "Спиридон",
+        "lastname": "Авакумов",
+        "totalprice": 55424,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-05-19",
+            "checkout": "2024-02-02"
+        },
+        "additionalneeds": "Dinner"
+    }
+}

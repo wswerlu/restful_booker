@@ -1,0 +1,11 @@
+{
+    "firstname": "Фёкла",
+    "lastname": "Ненарокова",
+    "totalprice": 97191,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2023-04-17",
+        "checkout": "2024-02-16"
+    },
+    "additionalneeds": "Dinner"
+}

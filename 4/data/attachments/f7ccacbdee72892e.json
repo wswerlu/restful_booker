@@ -1,0 +1,14 @@
+{
+    "bookingid": 3368,
+    "booking": {
+        "firstname": "Аксинья",
+        "lastname": "Арсенов",
+        "totalprice": 76489,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-02-22",
+            "checkout": "2023-12-06"
+        },
+        "additionalneeds": "Dinner"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "firstname": "Климент",
+    "lastname": "Рекемчук",
+    "totalprice": 46311,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2023-07-06",
+        "checkout": "2023-11-20"
+    },
+    "additionalneeds": "Lunch"
+}

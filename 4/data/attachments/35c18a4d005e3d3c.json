@@ -1,0 +1,11 @@
+{
+    "firstname": "Ингаtest",
+    "lastname": "Аствацатуроваtest",
+    "totalprice": 80189,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2023-07-26",
+        "checkout": "2023-12-04"
+    },
+    "additionalneeds": "Lunchtest"
+}

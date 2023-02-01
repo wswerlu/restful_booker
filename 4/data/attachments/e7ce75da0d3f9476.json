@@ -1,0 +1,14 @@
+{
+    "bookingid": 3363,
+    "booking": {
+        "firstname": "Инга",
+        "lastname": "Аствацатурова",
+        "totalprice": 80187,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-07-25",
+            "checkout": "2023-12-03"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

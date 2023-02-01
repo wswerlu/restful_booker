@@ -1,0 +1,14 @@
+{
+    "bookingid": 3389,
+    "booking": {
+        "firstname": "Алсу",
+        "lastname": "Тарасова",
+        "totalprice": 95769,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-11-02",
+            "checkout": "2024-08-10"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

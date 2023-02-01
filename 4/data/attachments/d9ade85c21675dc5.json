@@ -1,0 +1,14 @@
+{
+    "bookingid": 3351,
+    "booking": {
+        "firstname": "Юрий",
+        "lastname": "Самойлов",
+        "totalprice": 24449,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-02-12",
+            "checkout": "2024-01-11"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

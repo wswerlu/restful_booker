@@ -1,0 +1,14 @@
+{
+    "bookingid": 3352,
+    "booking": {
+        "firstname": "Чулпан",
+        "lastname": "Жарковская",
+        "totalprice": 18743,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2023-06-19",
+            "checkout": "2023-07-03"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "bookingid": 3385,
+    "booking": {
+        "firstname": "Прокопий",
+        "lastname": "Гуляева",
+        "totalprice": 96008,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-04-19",
+            "checkout": "2024-02-11"
+        },
+        "additionalneeds": "Dinner"
+    }
+}
