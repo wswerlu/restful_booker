@@ -1,4 +1,4 @@
-from json import dumps
+from json import JSONDecodeError, dumps
 from typing import Callable
 
 from allure_commons._allure import attach
@@ -41,7 +41,11 @@ def attach_curl_to_allure():
                 )
             except Exception as e:
                 print(e)
-            return response
+
+            try:
+                return response.json()
+            except JSONDecodeError:
+                return response.text
 
         return main
 
