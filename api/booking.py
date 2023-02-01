@@ -216,7 +216,7 @@ class BookingApi(BaseApi):
             data['lastname'] = lastname
         if total_price:
             data['totalprice'] = total_price
-        if deposit_paid:
+        if deposit_paid is not None:
             data['depositpaid'] = deposit_paid
         if checkin or checkout:
             data['bookingdates'] = {

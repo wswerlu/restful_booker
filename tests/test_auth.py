@@ -1,4 +1,5 @@
 from allure import epic, feature, title
+from pytest import mark
 
 from utils.helpers import get_booking_data, json_schema_asserts
 
@@ -10,11 +11,13 @@ class TestBooking:
     Тесты для проверки аутентификации
     """
 
+    @mark.not_parallel
     @title('Успешное создание токена аутентификации')
     def test_create_token_success(self, auth_api):
         create_token = auth_api.create_token()
         json_schema_asserts(response=create_token, name='create_token')
 
+    @mark.not_parallel
     @title('Аутентификация в методе PUT /booking/:id с валидными данными')
     def test_update_booking_method_with_valid_auth_data(self, booking_api, create_booking, create_token,
                                                         data_auth_validauth):

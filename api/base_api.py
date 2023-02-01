@@ -98,10 +98,7 @@ class BaseApi:
         )
         self.validator.validate_status_code(response)
 
-        try:
-            return response.json()
-        except JSONDecodeError:
-            return response.text
+        return response
 
     @attach_curl_to_allure()
     @step('Отправка запроса POST на URL-адрес - {url}')
@@ -131,10 +128,7 @@ class BaseApi:
         )
         self.validator.validate_status_code(response)
 
-        try:
-            return response.json()
-        except JSONDecodeError:
-            return response.text
+        return response
 
     @attach_curl_to_allure()
     @step('Отправка запроса PUT на URL-адрес - {url}')
@@ -171,10 +165,7 @@ class BaseApi:
         )
         self.validator.validate_status_code(response)
 
-        try:
-            return response.json()
-        except JSONDecodeError:
-            return response.text
+        return response
 
     @attach_curl_to_allure()
     @step('Отправка запроса PATCH на URL-адрес - {url}')
@@ -210,10 +201,7 @@ class BaseApi:
         )
         self.validator.validate_status_code(response)
 
-        try:
-            return response.json()
-        except JSONDecodeError:
-            return response.text
+        return response
 
     @attach_curl_to_allure()
     @step('Отправка запроса DELETE на URL-адрес - {url}')
@@ -245,7 +233,4 @@ class BaseApi:
         )
         self.validator.validate_status_code(response)
 
-        try:
-            return response.json()
-        except JSONDecodeError:
-            return response.text
+        return response
