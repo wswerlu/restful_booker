@@ -1,0 +1,14 @@
+{
+    "bookingid": 11678,
+    "booking": {
+        "firstname": "Инесса",
+        "lastname": "Радугин",
+        "totalprice": 35679,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-07-24",
+            "checkout": "2023-10-05"
+        },
+        "additionalneeds": "Dinner"
+    }
+}

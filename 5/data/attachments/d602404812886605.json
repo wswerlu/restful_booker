@@ -1,0 +1,14 @@
+{
+    "bookingid": 11701,
+    "booking": {
+        "firstname": "Протасий",
+        "lastname": "Саломатов",
+        "totalprice": 67213,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-07-04",
+            "checkout": "2024-03-09"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

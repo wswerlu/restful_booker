@@ -1,0 +1,11 @@
+{
+    "firstname": "Александра",
+    "lastname": "Филимонова",
+    "totalprice": 91970,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2023-09-29",
+        "checkout": "2024-02-19"
+    },
+    "additionalneeds": "Dinner"
+}

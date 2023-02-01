@@ -1,0 +1,14 @@
+{
+    "bookingid": 1259,
+    "booking": {
+        "firstname": "Руфина",
+        "lastname": "Асафова",
+        "totalprice": 3989,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-03-05",
+            "checkout": "2023-10-26"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

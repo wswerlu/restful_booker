@@ -1,0 +1,14 @@
+{
+    "bookingid": 11684,
+    "booking": {
+        "firstname": "Григорий",
+        "lastname": "Лагин",
+        "totalprice": 58726,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2023-02-28",
+            "checkout": "2024-02-20"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

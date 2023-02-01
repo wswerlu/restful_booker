@@ -1,0 +1,11 @@
+{
+    "firstname": "Венедиктtest",
+    "lastname": "Малышев",
+    "totalprice": 32354,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2023-03-12",
+        "checkout": "2024-02-18"
+    },
+    "additionalneeds": "Breakfast"
+}

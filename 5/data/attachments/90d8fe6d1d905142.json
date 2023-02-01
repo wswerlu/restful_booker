@@ -1,0 +1,14 @@
+{
+    "bookingid": 11692,
+    "booking": {
+        "firstname": "Авксентий",
+        "lastname": "Кобзева",
+        "totalprice": 1110,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2023-08-16",
+            "checkout": "2023-10-29"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "firstname": "Ярослав",
+    "lastname": "Владимирскаяtest",
+    "totalprice": 88912,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2023-02-26",
+        "checkout": "2023-04-21"
+    },
+    "additionalneeds": "Breakfast"
+}

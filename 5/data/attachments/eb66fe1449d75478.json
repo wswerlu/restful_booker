@@ -1,0 +1,14 @@
+{
+    "bookingid": 11673,
+    "booking": {
+        "firstname": "Галактион",
+        "lastname": "Осокин",
+        "totalprice": 9588,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-12-11",
+            "checkout": "2024-08-05"
+        },
+        "additionalneeds": "Dinner"
+    }
+}

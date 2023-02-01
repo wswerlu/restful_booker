@@ -1,0 +1,14 @@
+{
+    "bookingid": 11697,
+    "booking": {
+        "firstname": "Ярослав",
+        "lastname": "Владимирская",
+        "totalprice": 88912,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-02-26",
+            "checkout": "2023-04-21"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

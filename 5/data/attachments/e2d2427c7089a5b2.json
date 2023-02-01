@@ -1,0 +1,14 @@
+{
+    "bookingid": 11699,
+    "booking": {
+        "firstname": "Марк",
+        "lastname": "Буторин",
+        "totalprice": 19046,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2023-04-28",
+            "checkout": "2023-06-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

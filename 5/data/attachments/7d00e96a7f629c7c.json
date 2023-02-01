@@ -1,0 +1,14 @@
+{
+    "bookingid": 11689,
+    "booking": {
+        "firstname": "Мирра",
+        "lastname": "Мурманенко",
+        "totalprice": 8335,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2023-11-17",
+            "checkout": "2024-10-11"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

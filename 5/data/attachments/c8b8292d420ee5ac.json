@@ -1,0 +1,14 @@
+{
+    "bookingid": 11680,
+    "booking": {
+        "firstname": "Артём",
+        "lastname": "Буторина",
+        "totalprice": 10105,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2023-05-14",
+            "checkout": "2023-07-10"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "bookingid": 11672,
+    "booking": {
+        "firstname": "Ярослав",
+        "lastname": "Остальская",
+        "totalprice": 99091,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2023-06-05",
+            "checkout": "2023-11-24"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

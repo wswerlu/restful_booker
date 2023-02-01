@@ -1,0 +1,14 @@
+{
+    "bookingid": 11693,
+    "booking": {
+        "firstname": "Лара",
+        "lastname": "Гайдар",
+        "totalprice": 19205,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-07-27",
+            "checkout": "2024-04-08"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

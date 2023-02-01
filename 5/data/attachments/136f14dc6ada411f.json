@@ -1,0 +1,14 @@
+{
+    "bookingid": 11674,
+    "booking": {
+        "firstname": "Антонина",
+        "lastname": "Пивоваров",
+        "totalprice": 22083,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2023-05-17",
+            "checkout": "2023-09-22"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

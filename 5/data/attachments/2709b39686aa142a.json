@@ -1,0 +1,14 @@
+{
+    "bookingid": 11688,
+    "booking": {
+        "firstname": "Ким",
+        "lastname": "Ерастов",
+        "totalprice": 25088,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-02-11",
+            "checkout": "2023-08-23"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

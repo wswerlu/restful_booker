@@ -1,0 +1,14 @@
+{
+    "bookingid": 11682,
+    "booking": {
+        "firstname": "Артём",
+        "lastname": "Сальников",
+        "totalprice": 30172,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-07-06",
+            "checkout": "2024-02-23"
+        },
+        "additionalneeds": "Dinner"
+    }
+}

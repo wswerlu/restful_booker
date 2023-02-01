@@ -1,0 +1,14 @@
+{
+    "bookingid": 1273,
+    "booking": {
+        "firstname": "Сиара",
+        "lastname": "Кашафутдинова",
+        "totalprice": 72769,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2023-12-15",
+            "checkout": "2024-05-12"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
