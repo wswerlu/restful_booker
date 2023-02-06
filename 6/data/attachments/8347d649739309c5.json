@@ -1,0 +1,14 @@
+{
+    "bookingid": 230,
+    "booking": {
+        "firstname": "Илона",
+        "lastname": "Кофанов",
+        "totalprice": 31482,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-10-01",
+            "checkout": "2024-05-14"
+        },
+        "additionalneeds": "Dinner"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "firstname": "Номина",
+    "lastname": "Мурманюкtest",
+    "totalprice": 94195,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2023-04-04",
+        "checkout": "2024-01-11"
+    },
+    "additionalneeds": "Breakfast"
+}

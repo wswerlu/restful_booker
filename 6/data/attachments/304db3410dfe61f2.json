@@ -1,0 +1,11 @@
+{
+    "firstname": "Арабеллаtest",
+    "lastname": "Буровский",
+    "totalprice": 76897,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2023-07-26",
+        "checkout": "2024-07-05"
+    },
+    "additionalneeds": "Dinner"
+}

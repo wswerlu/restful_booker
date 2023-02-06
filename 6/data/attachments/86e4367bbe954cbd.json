@@ -1,0 +1,14 @@
+{
+    "bookingid": 255,
+    "booking": {
+        "firstname": "Амаль",
+        "lastname": "Бродский",
+        "totalprice": 56651,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2024-01-12",
+            "checkout": "2024-10-01"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

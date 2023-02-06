@@ -1,0 +1,14 @@
+{
+    "bookingid": 9929,
+    "booking": {
+        "firstname": "Жоржина",
+        "lastname": "Каминова",
+        "totalprice": 58397,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2023-05-28",
+            "checkout": "2023-11-13"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

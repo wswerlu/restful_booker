@@ -1,0 +1,14 @@
+{
+    "bookingid": 9940,
+    "booking": {
+        "firstname": "Тамила",
+        "lastname": "Любимов",
+        "totalprice": 79051,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-02-26",
+            "checkout": "2023-09-13"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

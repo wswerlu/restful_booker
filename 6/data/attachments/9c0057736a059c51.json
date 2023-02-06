@@ -1,0 +1,14 @@
+{
+    "bookingid": 269,
+    "booking": {
+        "firstname": "Майя",
+        "lastname": "Сударушкина",
+        "totalprice": 12824,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-12-29",
+            "checkout": "2024-05-17"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

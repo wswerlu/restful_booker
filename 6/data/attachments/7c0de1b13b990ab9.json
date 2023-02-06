@@ -1,0 +1,14 @@
+{
+    "bookingid": 9927,
+    "booking": {
+        "firstname": "Алиса",
+        "lastname": "Африкантов",
+        "totalprice": 34816,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-12-11",
+            "checkout": "2024-11-03"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

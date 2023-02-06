@@ -1,0 +1,14 @@
+{
+    "bookingid": 233,
+    "booking": {
+        "firstname": "Сильвестр",
+        "lastname": "Стариков",
+        "totalprice": 15221,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-10-01",
+            "checkout": "2024-07-23"
+        },
+        "additionalneeds": "Dinner"
+    }
+}

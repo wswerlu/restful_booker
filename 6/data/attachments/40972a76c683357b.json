@@ -1,0 +1,11 @@
+{
+    "firstname": "Ждан",
+    "lastname": "Орловская",
+    "totalprice": 47233,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2023-09-09",
+        "checkout": "2024-04-09"
+    },
+    "additionalneeds": "Breakfast"
+}

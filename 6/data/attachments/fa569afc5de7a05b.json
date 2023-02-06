@@ -1,0 +1,14 @@
+{
+    "bookingid": 9951,
+    "booking": {
+        "firstname": "Валерьян",
+        "lastname": "Прудникова",
+        "totalprice": 63097,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2023-05-08",
+            "checkout": "2023-09-26"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

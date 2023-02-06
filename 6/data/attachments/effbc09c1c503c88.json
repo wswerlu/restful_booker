@@ -1,0 +1,14 @@
+{
+    "bookingid": 9925,
+    "booking": {
+        "firstname": "Евгений",
+        "lastname": "Михаленко",
+        "totalprice": 84863,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-11-01",
+            "checkout": "2024-02-02"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

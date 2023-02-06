@@ -1,0 +1,14 @@
+{
+    "bookingid": 9928,
+    "booking": {
+        "firstname": "Нана",
+        "lastname": "Акулина",
+        "totalprice": 70149,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-11-19",
+            "checkout": "2024-11-11"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

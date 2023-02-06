@@ -1,0 +1,14 @@
+{
+    "bookingid": 9949,
+    "booking": {
+        "firstname": "Линда",
+        "lastname": "Каштанова",
+        "totalprice": 33201,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2023-06-10",
+            "checkout": "2023-11-09"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

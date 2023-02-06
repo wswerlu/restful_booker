@@ -1,0 +1,11 @@
+{
+    "firstname": "Ритаtest",
+    "lastname": "Есиповtest",
+    "totalprice": 97785,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2023-12-08",
+        "checkout": "2024-11-24"
+    },
+    "additionalneeds": "Breakfasttest"
+}

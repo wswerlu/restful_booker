@@ -1,0 +1,11 @@
+{
+    "firstname": "Юстин",
+    "lastname": "Дежнева",
+    "totalprice": 82833,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2024-01-02",
+        "checkout": "2024-11-25"
+    },
+    "additionalneeds": "Dinner"
+}
