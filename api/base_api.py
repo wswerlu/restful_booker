@@ -75,8 +75,8 @@ class BaseApi:
     def override_validation_rules(self, success_codes: list[int] | None = None):
         return ResponseValidator(self, success_codes)
 
-    @attach_curl_to_allure()
     @step('Отправка запроса GET на URL-адрес - {url}')
+    @attach_curl_to_allure()
     def _get(self, url: str, headers: dict | None = None, query: dict | None = None):
         """
         Отправка GET-запроса на сервер.
@@ -100,8 +100,8 @@ class BaseApi:
 
         return response
 
-    @attach_curl_to_allure()
     @step('Отправка запроса POST на URL-адрес - {url}')
+    @attach_curl_to_allure()
     def _post(self, url: str, data: str | dict | None = None, headers: dict | None = None, query: dict | None = None,
               is_json: bool = True):
         """
@@ -130,8 +130,8 @@ class BaseApi:
 
         return response
 
-    @attach_curl_to_allure()
     @step('Отправка запроса PUT на URL-адрес - {url}')
+    @attach_curl_to_allure()
     def _put(self, url: str, data: str | dict | None = None, headers: dict | None = None, auth: tuple | None = None,
              query: dict | None = None, cookies: dict | None = None, is_json: bool = True):
         """
@@ -167,8 +167,8 @@ class BaseApi:
 
         return response
 
-    @attach_curl_to_allure()
     @step('Отправка запроса PATCH на URL-адрес - {url}')
+    @attach_curl_to_allure()
     def _patch(self, url: str, data: str | dict | None = None, headers: dict | None = None, auth: tuple | None = None,
                query: dict | None = None, cookies: dict | None = None, is_json: bool = True):
         """
@@ -203,8 +203,8 @@ class BaseApi:
 
         return response
 
-    @attach_curl_to_allure()
     @step('Отправка запроса DELETE на URL-адрес - {url}')
+    @attach_curl_to_allure()
     def _delete(self, url: str, headers: dict | None = None, auth: tuple | None = None, query: dict | None = None,
                 cookies: dict | None = None):
         """
