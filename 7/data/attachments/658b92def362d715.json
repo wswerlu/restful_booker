@@ -1,0 +1,14 @@
+{
+    "bookingid": 332,
+    "booking": {
+        "firstname": "Прасковья",
+        "lastname": "Чичваркина",
+        "totalprice": 89920,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-09-27",
+            "checkout": "2025-04-29"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

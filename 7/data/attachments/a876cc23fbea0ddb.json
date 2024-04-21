@@ -1,0 +1,14 @@
+{
+    "bookingid": 335,
+    "booking": {
+        "firstname": "Мариям",
+        "lastname": "Анастасов",
+        "totalprice": 34811,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-07-30",
+            "checkout": "2025-02-15"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

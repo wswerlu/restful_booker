@@ -1,0 +1,14 @@
+{
+    "bookingid": 330,
+    "booking": {
+        "firstname": "Лука",
+        "lastname": "Рубина",
+        "totalprice": 45619,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2025-03-31",
+            "checkout": "2025-07-20"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

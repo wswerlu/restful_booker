@@ -1,0 +1,14 @@
+{
+    "bookingid": 337,
+    "booking": {
+        "firstname": "Римма",
+        "lastname": "Журавская",
+        "totalprice": 61103,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2024-11-19",
+            "checkout": "2025-08-03"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

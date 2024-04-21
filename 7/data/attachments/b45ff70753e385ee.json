@@ -1,0 +1,11 @@
+{
+    "firstname": "Андрейtest",
+    "lastname": "Фионинtest",
+    "totalprice": 19715,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2025-04-11",
+        "checkout": "2025-04-20"
+    },
+    "additionalneeds": "Lunchtest"
+}

@@ -1,0 +1,14 @@
+{
+    "bookingid": 322,
+    "booking": {
+        "firstname": "Шейла",
+        "lastname": "Левитина",
+        "totalprice": 78581,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2025-04-01",
+            "checkout": "2025-09-06"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "bookingid": 318,
+    "booking": {
+        "firstname": "Айсылу",
+        "lastname": "Кочергина",
+        "totalprice": 64187,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-06-04",
+            "checkout": "2025-05-01"
+        },
+        "additionalneeds": "Dinner"
+    }
+}

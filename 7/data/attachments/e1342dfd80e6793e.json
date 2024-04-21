@@ -1,0 +1,14 @@
+{
+    "bookingid": 327,
+    "booking": {
+        "firstname": "Егор",
+        "lastname": "Пестова",
+        "totalprice": 58298,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-10-29",
+            "checkout": "2025-01-06"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

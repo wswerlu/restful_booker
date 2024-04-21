@@ -1,0 +1,11 @@
+{
+    "firstname": "Макария",
+    "lastname": "Феофилактова",
+    "totalprice": 23239,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2025-04-07",
+        "checkout": "2025-08-23"
+    },
+    "additionalneeds": "Dinner"
+}

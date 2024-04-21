@@ -1,0 +1,14 @@
+{
+    "bookingid": 329,
+    "booking": {
+        "firstname": "Андрей",
+        "lastname": "Фионин",
+        "totalprice": 19635,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2025-04-10",
+            "checkout": "2025-04-19"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

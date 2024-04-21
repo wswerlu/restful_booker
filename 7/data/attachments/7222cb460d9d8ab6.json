@@ -1,0 +1,14 @@
+{
+    "bookingid": 346,
+    "booking": {
+        "firstname": "Лера",
+        "lastname": "Бруштейн",
+        "totalprice": 15104,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2024-06-10",
+            "checkout": "2025-05-15"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

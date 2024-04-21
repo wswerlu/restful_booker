@@ -1,0 +1,14 @@
+{
+    "bookingid": 320,
+    "booking": {
+        "firstname": "Фёдор",
+        "lastname": "Терехов",
+        "totalprice": 9644,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2025-03-06",
+            "checkout": "2025-05-11"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

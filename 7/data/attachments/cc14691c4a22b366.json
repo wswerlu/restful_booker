@@ -1,0 +1,14 @@
+{
+    "bookingid": 326,
+    "booking": {
+        "firstname": "Зарина",
+        "lastname": "Плавильщикова",
+        "totalprice": 94242,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2024-05-26",
+            "checkout": "2025-03-11"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

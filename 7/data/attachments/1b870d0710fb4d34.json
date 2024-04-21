@@ -1,0 +1,14 @@
+{
+    "bookingid": 325,
+    "booking": {
+        "firstname": "Жансая",
+        "lastname": "Сотников",
+        "totalprice": 75971,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2025-04-10",
+            "checkout": "2025-09-18"
+        },
+        "additionalneeds": "Dinner"
+    }
+}

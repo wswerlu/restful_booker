@@ -1,0 +1,14 @@
+{
+    "bookingid": 324,
+    "booking": {
+        "firstname": "Челси",
+        "lastname": "Чистов",
+        "totalprice": 37718,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-08-02",
+            "checkout": "2025-01-28"
+        },
+        "additionalneeds": "Dinner"
+    }
+}

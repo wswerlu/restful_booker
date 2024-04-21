@@ -1,0 +1,14 @@
+{
+    "bookingid": 328,
+    "booking": {
+        "firstname": "Ия",
+        "lastname": "Плавильщикова",
+        "totalprice": 93345,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-08-26",
+            "checkout": "2025-04-10"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

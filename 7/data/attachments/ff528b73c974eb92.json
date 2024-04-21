@@ -1,0 +1,14 @@
+{
+    "bookingid": 319,
+    "booking": {
+        "firstname": "Вадим",
+        "lastname": "Сафонова",
+        "totalprice": 46142,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-12-11",
+            "checkout": "2025-02-23"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

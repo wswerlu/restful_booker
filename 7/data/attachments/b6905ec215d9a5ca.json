@@ -1,0 +1,11 @@
+{
+    "firstname": "Владлен",
+    "lastname": "Ветров",
+    "totalprice": 1253,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2025-01-02",
+        "checkout": "2025-01-08"
+    },
+    "additionalneeds": "Breakfast"
+}

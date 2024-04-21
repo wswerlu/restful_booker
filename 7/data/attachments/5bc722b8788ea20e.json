@@ -1,0 +1,14 @@
+{
+    "bookingid": 331,
+    "booking": {
+        "firstname": "Иван",
+        "lastname": "Навальный",
+        "totalprice": 10112,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2024-04-24",
+            "checkout": "2024-12-21"
+        },
+        "additionalneeds": "Dinner"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "firstname": "Сергей",
+    "lastname": "Лермонтова",
+    "totalprice": 37785,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2025-04-17",
+        "checkout": "2026-04-11"
+    },
+    "additionalneeds": "Breakfast"
+}

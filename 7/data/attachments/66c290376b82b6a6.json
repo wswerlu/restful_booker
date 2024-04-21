@@ -1,0 +1,14 @@
+{
+    "bookingid": 351,
+    "booking": {
+        "firstname": "Индира",
+        "lastname": "Дриянский",
+        "totalprice": 76968,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2025-03-21",
+            "checkout": "2025-11-08"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

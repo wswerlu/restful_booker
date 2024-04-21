@@ -1,0 +1,14 @@
+{
+    "bookingid": 333,
+    "booking": {
+        "firstname": "Ярослава",
+        "lastname": "Радугин",
+        "totalprice": 79219,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-05-10",
+            "checkout": "2024-07-12"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

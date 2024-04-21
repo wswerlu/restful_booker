@@ -1,0 +1,11 @@
+{
+    "firstname": "Борис",
+    "lastname": "Нефёдова",
+    "totalprice": 44066,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2024-06-17",
+        "checkout": "2024-09-29"
+    },
+    "additionalneeds": "Lunch"
+}

@@ -1,0 +1,14 @@
+{
+    "bookingid": 316,
+    "booking": {
+        "firstname": "Анатолий",
+        "lastname": "Беляев",
+        "totalprice": 90243,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2024-12-18",
+            "checkout": "2025-06-11"
+        },
+        "additionalneeds": "Dinner"
+    }
+}
