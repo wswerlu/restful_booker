@@ -1,0 +1,14 @@
+{
+    "bookingid": 972,
+    "booking": {
+        "firstname": "Ерофей",
+        "lastname": "Новосельцева",
+        "totalprice": 19596,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-06-28",
+            "checkout": "2024-06-28"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

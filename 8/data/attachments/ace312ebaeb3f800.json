@@ -1,0 +1,14 @@
+{
+    "bookingid": 982,
+    "booking": {
+        "firstname": "Ираклий",
+        "lastname": "Перхурова",
+        "totalprice": 87567,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2025-03-19",
+            "checkout": "2025-12-24"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

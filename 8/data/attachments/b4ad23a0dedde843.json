@@ -1,0 +1,14 @@
+{
+    "bookingid": 996,
+    "booking": {
+        "firstname": "Ариадна",
+        "lastname": "Кобзев",
+        "totalprice": 7759,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-07-25",
+            "checkout": "2024-12-28"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

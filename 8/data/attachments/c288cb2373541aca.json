@@ -1,0 +1,11 @@
+{
+    "firstname": "Хадия",
+    "lastname": "Кожевникова",
+    "totalprice": 29527,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-06-16",
+        "checkout": "2024-10-30"
+    },
+    "additionalneeds": "Lunch"
+}

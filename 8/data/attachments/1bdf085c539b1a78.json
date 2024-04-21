@@ -1,0 +1,14 @@
+{
+    "bookingid": 981,
+    "booking": {
+        "firstname": "Эмили",
+        "lastname": "Агапьев",
+        "totalprice": 15738,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-08-30",
+            "checkout": "2025-03-09"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "firstname": "Владислава",
+    "lastname": "Касимов",
+    "totalprice": 4964,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-07-22",
+        "checkout": "2025-06-06"
+    },
+    "additionalneeds": "Breakfast"
+}

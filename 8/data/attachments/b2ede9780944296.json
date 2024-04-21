@@ -1,0 +1,14 @@
+{
+    "bookingid": 971,
+    "booking": {
+        "firstname": "Альвиан",
+        "lastname": "Захаров",
+        "totalprice": 61903,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2024-10-03",
+            "checkout": "2025-07-29"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

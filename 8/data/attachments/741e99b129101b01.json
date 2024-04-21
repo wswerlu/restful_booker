@@ -1,0 +1,14 @@
+{
+    "bookingid": 960,
+    "booking": {
+        "firstname": "Станислав",
+        "lastname": "Зюзюкин",
+        "totalprice": 86466,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2024-10-05",
+            "checkout": "2025-05-14"
+        },
+        "additionalneeds": "Dinner"
+    }
+}

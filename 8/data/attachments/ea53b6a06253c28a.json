@@ -1,0 +1,14 @@
+{
+    "bookingid": 998,
+    "booking": {
+        "firstname": "Ариадна",
+        "lastname": "Панкратьев",
+        "totalprice": 26320,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2024-11-22",
+            "checkout": "2025-08-06"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

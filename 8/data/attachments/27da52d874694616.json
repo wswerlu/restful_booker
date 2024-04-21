@@ -1,0 +1,14 @@
+{
+    "bookingid": 963,
+    "booking": {
+        "firstname": "Иулиан",
+        "lastname": "Люкин",
+        "totalprice": 30291,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-07-04",
+            "checkout": "2024-10-12"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

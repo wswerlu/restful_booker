@@ -1,0 +1,11 @@
+{
+    "firstname": "Дараtest",
+    "lastname": "Протасова",
+    "totalprice": 87132,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-08-12",
+        "checkout": "2024-10-05"
+    },
+    "additionalneeds": "Dinner"
+}

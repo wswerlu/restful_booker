@@ -1,0 +1,14 @@
+{
+    "bookingid": 987,
+    "booking": {
+        "firstname": "Оксана",
+        "lastname": "Парамонова",
+        "totalprice": 20660,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2025-02-01",
+            "checkout": "2025-10-27"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "firstname": "Альфияtest",
+    "lastname": "Замятинtest",
+    "totalprice": 35089,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2025-04-09",
+        "checkout": "2025-06-22"
+    },
+    "additionalneeds": "Dinnertest"
+}

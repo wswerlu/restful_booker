@@ -1,0 +1,14 @@
+{
+    "bookingid": 977,
+    "booking": {
+        "firstname": "Ермолай",
+        "lastname": "Артамонов",
+        "totalprice": 24481,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2025-03-13",
+            "checkout": "2026-01-07"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

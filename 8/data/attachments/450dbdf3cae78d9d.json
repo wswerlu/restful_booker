@@ -1,0 +1,14 @@
+{
+    "bookingid": 976,
+    "booking": {
+        "firstname": "Зоряна",
+        "lastname": "Беспутина",
+        "totalprice": 88621,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2024-05-03",
+            "checkout": "2025-04-26"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

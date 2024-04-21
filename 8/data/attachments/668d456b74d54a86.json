@@ -1,0 +1,14 @@
+{
+    "bookingid": 970,
+    "booking": {
+        "firstname": "Дильназ",
+        "lastname": "Солнцев",
+        "totalprice": 67613,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-07-06",
+            "checkout": "2025-03-17"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

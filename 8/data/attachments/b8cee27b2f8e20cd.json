@@ -1,0 +1,14 @@
+{
+    "bookingid": 999,
+    "booking": {
+        "firstname": "Цагана",
+        "lastname": "Тихонова",
+        "totalprice": 86208,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-08-08",
+            "checkout": "2025-02-25"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

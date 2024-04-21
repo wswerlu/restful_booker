@@ -1,0 +1,14 @@
+{
+    "bookingid": 959,
+    "booking": {
+        "firstname": "Юна",
+        "lastname": "Памфилова",
+        "totalprice": 542,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2024-06-11",
+            "checkout": "2025-03-10"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

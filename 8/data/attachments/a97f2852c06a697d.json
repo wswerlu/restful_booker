@@ -1,0 +1,11 @@
+{
+    "firstname": "Ариадна",
+    "lastname": "Юдов",
+    "totalprice": 54577,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-05-27",
+        "checkout": "2024-06-17"
+    },
+    "additionalneeds": "Lunch"
+}

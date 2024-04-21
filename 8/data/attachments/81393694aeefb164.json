@@ -1,0 +1,14 @@
+{
+    "bookingid": 962,
+    "booking": {
+        "firstname": "Варвара",
+        "lastname": "Соротокина",
+        "totalprice": 15714,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2025-02-01",
+            "checkout": "2025-07-06"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

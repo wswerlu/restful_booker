@@ -1,0 +1,11 @@
+{
+    "firstname": "Спиридон",
+    "lastname": "Невзорова",
+    "totalprice": 88305,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2024-10-29",
+        "checkout": "2025-01-16"
+    },
+    "additionalneeds": "Dinner"
+}

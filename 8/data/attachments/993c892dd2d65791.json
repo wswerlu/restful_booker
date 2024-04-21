@@ -1,0 +1,14 @@
+{
+    "bookingid": 973,
+    "booking": {
+        "firstname": "Альфия",
+        "lastname": "Замятин",
+        "totalprice": 35001,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2025-04-08",
+            "checkout": "2025-06-21"
+        },
+        "additionalneeds": "Dinner"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "bookingid": 975,
+    "booking": {
+        "firstname": "Наима",
+        "lastname": "Драгунская",
+        "totalprice": 90362,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2024-11-03",
+            "checkout": "2025-09-27"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

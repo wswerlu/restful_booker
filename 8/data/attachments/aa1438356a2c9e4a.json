@@ -1,0 +1,14 @@
+{
+    "bookingid": 993,
+    "booking": {
+        "firstname": "Сания",
+        "lastname": "Фатеева",
+        "totalprice": 58653,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2024-12-23",
+            "checkout": "2025-04-17"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

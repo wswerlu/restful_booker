@@ -1,0 +1,14 @@
+{
+    "bookingid": 966,
+    "booking": {
+        "firstname": "Валерий",
+        "lastname": "Кошелев",
+        "totalprice": 37606,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2024-12-30",
+            "checkout": "2025-11-23"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

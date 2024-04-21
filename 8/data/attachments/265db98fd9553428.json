@@ -1,0 +1,14 @@
+{
+    "bookingid": 961,
+    "booking": {
+        "firstname": "Карина",
+        "lastname": "Абакумов",
+        "totalprice": 84669,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2025-01-16",
+            "checkout": "2025-11-19"
+        },
+        "additionalneeds": "Dinner"
+    }
+}
