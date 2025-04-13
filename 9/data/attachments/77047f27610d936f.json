@@ -1,0 +1,14 @@
+{
+    "bookingid": 975,
+    "booking": {
+        "firstname": "Евграф",
+        "lastname": "Питиримов",
+        "totalprice": 18904,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2025-12-22",
+            "checkout": "2026-01-12"
+        },
+        "additionalneeds": "Dinner"
+    }
+}

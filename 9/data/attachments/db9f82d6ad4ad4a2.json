@@ -1,0 +1,11 @@
+{
+    "firstname": "Иудаtest",
+    "lastname": "Олисовtest",
+    "totalprice": 36853,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2025-09-14",
+        "checkout": "2026-05-06"
+    },
+    "additionalneeds": "Dinnertest"
+}

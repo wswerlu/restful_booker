@@ -1,0 +1,11 @@
+{
+    "firstname": "Владимир",
+    "lastname": "Безбатько",
+    "totalprice": 12851,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2025-08-14",
+        "checkout": "2025-11-13"
+    },
+    "additionalneeds": "Breakfast"
+}

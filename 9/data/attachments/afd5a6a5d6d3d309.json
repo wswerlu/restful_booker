@@ -1,0 +1,14 @@
+{
+    "bookingid": 981,
+    "booking": {
+        "firstname": "Иуда",
+        "lastname": "Олисов",
+        "totalprice": 36850,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2025-09-13",
+            "checkout": "2026-05-05"
+        },
+        "additionalneeds": "Dinner"
+    }
+}

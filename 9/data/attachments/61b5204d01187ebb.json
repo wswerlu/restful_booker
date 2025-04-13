@@ -1,0 +1,14 @@
+{
+    "bookingid": 976,
+    "booking": {
+        "firstname": "Пантелеймон",
+        "lastname": "Люкина",
+        "totalprice": 123,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2026-03-06",
+            "checkout": "2026-09-28"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

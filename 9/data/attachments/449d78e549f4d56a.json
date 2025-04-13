@@ -1,0 +1,11 @@
+{
+    "firstname": "Софрон",
+    "lastname": "Зорина",
+    "totalprice": 65202,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2026-04-11",
+        "checkout": "2026-04-20"
+    },
+    "additionalneeds": "Breakfast"
+}

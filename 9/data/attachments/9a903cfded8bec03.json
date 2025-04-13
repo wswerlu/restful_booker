@@ -1,0 +1,14 @@
+{
+    "bookingid": 972,
+    "booking": {
+        "firstname": "Забава",
+        "lastname": "Феонин",
+        "totalprice": 31053,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2026-04-09",
+            "checkout": "2026-07-08"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

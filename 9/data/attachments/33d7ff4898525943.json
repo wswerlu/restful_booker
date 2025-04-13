@@ -1,0 +1,14 @@
+{
+    "bookingid": 970,
+    "booking": {
+        "firstname": "Чулпан",
+        "lastname": "Азарова",
+        "totalprice": 17126,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2025-06-17",
+            "checkout": "2026-02-13"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

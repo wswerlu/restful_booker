@@ -1,0 +1,14 @@
+{
+    "bookingid": 990,
+    "booking": {
+        "firstname": "Сила",
+        "lastname": "Юзефович",
+        "totalprice": 37976,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2026-02-19",
+            "checkout": "2026-06-08"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

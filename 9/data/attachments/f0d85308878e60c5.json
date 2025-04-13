@@ -1,0 +1,14 @@
+{
+    "bookingid": 985,
+    "booking": {
+        "firstname": "Тарас",
+        "lastname": "Тарн",
+        "totalprice": 34471,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2026-04-02",
+            "checkout": "2026-06-14"
+        },
+        "additionalneeds": "Lunch"
+    }
+}

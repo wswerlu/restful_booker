@@ -1,0 +1,14 @@
+{
+    "bookingid": 967,
+    "booking": {
+        "firstname": "Аврора",
+        "lastname": "Брюсов",
+        "totalprice": 37174,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2025-08-25",
+            "checkout": "2025-09-27"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

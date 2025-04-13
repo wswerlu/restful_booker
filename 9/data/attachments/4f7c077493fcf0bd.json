@@ -1,0 +1,11 @@
+{
+    "firstname": "Денис",
+    "lastname": "Малахов",
+    "totalprice": 94813,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2026-03-11",
+        "checkout": "2027-02-18"
+    },
+    "additionalneeds": "Lunch"
+}

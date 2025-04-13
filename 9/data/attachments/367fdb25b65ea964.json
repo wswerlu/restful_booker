@@ -1,0 +1,14 @@
+{
+    "bookingid": 977,
+    "booking": {
+        "firstname": "Семён",
+        "lastname": "Адрианова",
+        "totalprice": 35089,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2025-05-07",
+            "checkout": "2025-11-21"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

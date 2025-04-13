@@ -1,0 +1,11 @@
+{
+    "firstname": "Антонин",
+    "lastname": "Баранова",
+    "totalprice": 48464,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2025-06-21",
+        "checkout": "2026-03-06"
+    },
+    "additionalneeds": "Dinner"
+}

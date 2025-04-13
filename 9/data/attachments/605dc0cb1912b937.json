@@ -1,0 +1,11 @@
+{
+    "firstname": "Амаль",
+    "lastname": "Елизарова",
+    "totalprice": 94652,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2025-09-10",
+        "checkout": "2026-06-21"
+    },
+    "additionalneeds": "Lunch"
+}

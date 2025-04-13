@@ -1,0 +1,14 @@
+{
+    "bookingid": 968,
+    "booking": {
+        "firstname": "Ариана",
+        "lastname": "Киркиж",
+        "totalprice": 27917,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2025-06-28",
+            "checkout": "2025-09-02"
+        },
+        "additionalneeds": "Lunch"
+    }
+}
